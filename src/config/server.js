@@ -8,7 +8,7 @@ const protectedApi = express.Router()
 const openApi = express.Router()
 require('dotenv/config')
 
-const port = 3003
+const port = process.env.PORT || 3003
 const urlMongodb = process.env.URL_MONGODB
 const server = express()
 
